@@ -5,7 +5,7 @@ import 'dart:convert';
 import 'package:flutter/services.dart' show rootBundle;
 
 const String kAgrovidaContentPackAssetPath =
-    'packages/agrovida_content_pack/assets/content_pack.json';
+    'packages/agrovida_content_pack/assets/agrovida_content_pack_v1.json';
 
 Future<String> loadContentPackJson() {
   return rootBundle.loadString(kAgrovidaContentPackAssetPath);
@@ -15,4 +15,3 @@ Future<Map<String, dynamic>> loadContentPackDecoded() async {
   final raw = await loadContentPackJson();
   return jsonDecode(raw) as Map<String, dynamic>;
 }
-
