@@ -8,4 +8,17 @@ void main() {
       'packages/agrovida_content_pack/assets/agrovida_content_pack_v2.json',
     );
   });
+
+  test('logical content pack image paths are qualified to package assets', () {
+    expect(
+      qualifyContentPackImagePath('assets/images/example.png'),
+      'packages/agrovida_content_pack/assets/images/example.png',
+    );
+    expect(
+      qualifyContentPackImagePath(
+        'packages/agrovida_content_pack/assets/images/example.png',
+      ),
+      'packages/agrovida_content_pack/assets/images/example.png',
+    );
+  });
 }
