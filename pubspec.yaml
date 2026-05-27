@@ -1,6 +1,6 @@
 name: agrovida_content_pack
 description: Offline bundled Agrovida content pack for FlutterFlow.
-version: 0.1.0
+version: 0.1.1
 repository: https://github.com/bakerhans/agrovida_content_pack
 
 environment:
@@ -17,4 +17,4 @@ dev_dependencies:
 
 flutter:
   assets:
-    - assets/agrovida_content_pack_v1.json
+    - assets/agrovida_content_pack_v2.json
